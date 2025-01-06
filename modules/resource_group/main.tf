@@ -13,6 +13,7 @@ provider "azurerm" {
   }
 }
 
+# Yo does this work
 module "rg" {
   source = "../resource_group/"
 
