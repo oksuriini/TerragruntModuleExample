@@ -13,7 +13,9 @@ provider "azurerm" {
   }
 }
 
-resource "azurerm_resource_group" "res" {
+module "rg" {
+  source = "../resource_group/"
+
   name     = var.name
   location = var.location
 }
