@@ -37,5 +37,3 @@ module "vm" {
   admin_username = var.admin_username
   subnet_id      = module.vnet.subnet_id
 }
-
-
