@@ -8,13 +8,13 @@ terraform {
 }
 
 module "rg" {
-  source   = "./rg/"
+  source   = "../rg/"
   name     = var.name
   location = var.location
 }
 
 module "vnet" {
-  source = "./vnet/"
+  source = "../vnet/"
 
   resource_group_name = module.rg.resource_group_name
   location            = module.rg.resource_group_location
@@ -26,7 +26,7 @@ module "vnet" {
 }
 
 module "vm" {
-  source = "./vm/"
+  source = "../vm/"
 
   resource_group_name = module.rg.resource_group_name
   location            = module.rg.resource_group_location
