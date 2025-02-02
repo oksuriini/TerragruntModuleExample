@@ -7,6 +7,12 @@ terraform {
   }
 }
 
+provider "azurerm" {
+  subscription_id = var.subscription_id
+  features {
+  }
+}
+
 module "rg" {
   source   = "../rg/"
   name     = var.name

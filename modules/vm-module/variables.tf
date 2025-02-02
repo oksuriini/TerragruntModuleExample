@@ -23,3 +23,7 @@ variable "admin_username" {
   type      = string
   sensitive = true
 }
+
+variable "subsciption_id" {
+  type = string
+}
